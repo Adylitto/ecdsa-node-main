@@ -12,11 +12,11 @@ app.use(express.json());
 
 const balances = {
     //  Private Key 04a2bb46470bccc5fdad85a6833ef9aff8fe082ae53fbe46ce6db2e1009e4fef
-    "0x009b81a6f8ecfdd8f129": 1000,
-    // Private Key a3b6421c70f73fa5487af7c72f9cdb44c9e6873f6d2dc90936a509b8c2850aaa
-    "0xaaa8fb541540f7d954ec": 50,
-    // Private Key 37ebdf26165f916f3916e59290b38565cb91aebda633476891944a8673a1aa0f
-    "0x187de361f645dfa21739": 75,
+    "009b81a6f8ecfdd8f129": 100,
+    // Private Key 5fc7e16319f7a76041d1f0189da88e9862e9605979e37aed7102a8a8d7ac60ea
+    "b61a62bba6f627e46ebb": 50,
+    // Private Key 7601da2972c9940dbf153c79470a81b655c58e6346f7de129a4ff97525336c36
+    "b514c696fe3284bccf81": 75,
 };
 
 app.get("/balance/:address", (req, res) => {
@@ -33,11 +33,11 @@ app.get("/accounts", (req, res) => {
         },
         {
             privateKey:
-                " a3b6421c70f73fa5487af7c72f9cdb44c9e6873f6d2dc90936a509b8c2850aaa",
+                " 5fc7e16319f7a76041d1f0189da88e9862e9605979e37aed7102a8a8d7ac60ea",
         },
         {
             privateKey:
-                " 37ebdf26165f916f3916e59290b38565cb91aebda633476891944a8673a1aa0f",
+                " 7601da2972c9940dbf153c79470a81b655c58e6346f7de129a4ff97525336c36",
         },
     ];
     Object.entries(balances).forEach(([address, balance], index) => {

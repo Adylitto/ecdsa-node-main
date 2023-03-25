@@ -34,16 +34,7 @@ function Wallet({
     return (
         <div className="container wallet">
             <h1>Your Wallet</h1>
-            <p className="note-body">
-                <span className="note-title">NOTE: </span> You will never ever
-                will input your Private like this.
-                <br />
-                But for the purpose of understanding how public key cryptography
-                works we are doing it here,
-                <br />
-                Generally your wallet will store your private key and sign
-                message when needed.
-            </p>
+            
             <label>
                 Private Key
                 <input
